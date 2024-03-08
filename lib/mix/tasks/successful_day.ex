@@ -4,7 +4,6 @@ defmodule Mix.Tasks.SuccessfulDay do
   alias ClearSettleEngineSchemas.{Repo, Participant, Account, Security, SecurityBalance}
   alias ClearSettleEngine.{Repo}
   alias MarketEventProcessor
-  alias ClearSettleEngine.Utils.MarketEventXmlConverter
 
   require Logger
 
@@ -97,13 +96,6 @@ defmodule Mix.Tasks.SuccessfulDay do
               quantity: quantity
               # Set other required fields for the Trade struct
             }
-
-            xml =
-              trade
-              |> MarketEventXmlConverter.to_xml("Trade")
-
-            IO.puts("xml")
-            IO.puts("#{inspect(xml)}")
 
             IO.puts("sending trade: #{inspect(trade)}")
 
