@@ -1,7 +1,6 @@
 import Config
 
 config :clear_settle_engine,
-  kafka_partition_count: 3,
   ecto_repos: [ClearSettleEngine.Repo]
 
 config :clear_settle_engine, ClearSettleEngine.Repo,

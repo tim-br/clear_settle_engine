@@ -24,7 +24,6 @@ defmodule ClearSettleEngine.MixProject do
   defp deps do
     [
       {:ecto_sql, "~> 3.11.1"},
-      {:kafka_ex, "~> 0.12.1"},
       {:logger_file_backend, "~> 0.0.11"},
       {:postgrex, "~> 0.17.4"},
       {:sweet_xml, "~> 0.7.4"}
