@@ -8,8 +8,7 @@ Ensure you have Elixir and PostgreSQL installed on your machine.
 2. Navigate into the project directory.
 3. Initialize the submodule:
 
-Run `git submodule add git@github.com:tim-br/clear_settle_engine_schemas.git lib/clear_settle_engine_schemas`
-Then, initialize and pull the submodule data: `git submodule update --init --recursive`
+Initialize and pull the submodule data: `git submodule update --init --recursive`.
 
 #### Configuration:
 Update `config.exs` with your PostgreSQL credentials:
