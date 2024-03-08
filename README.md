@@ -1,5 +1,9 @@
 ### Installation, Migration, and Running Mix Tasks for ClearSettleEngine
 
+#### Description
+
+An engine for clearing and settling events specifically for private markets.
+
 #### Prerequisites:
 Ensure you have Elixir and PostgreSQL installed on your machine.
 
