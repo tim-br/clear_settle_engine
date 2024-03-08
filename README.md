@@ -33,3 +33,7 @@ Run the following commands:
 - Run `mix run successful_day` to execute the successful_day task.
 
 Ensure you're in the project directory while running these commands.
+
+### Live Demo with Market Events
+
+For a live demonstration of the script interacting with real-time market events, please visit the [Clear Settle Admin GitHub repository](https://github.com/tim-br/clear_settle_admin). This repository provides additional context and showcases the application in a dynamic, live environment, offering insight into how the system performs under actual market conditions.
