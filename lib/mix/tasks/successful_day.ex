@@ -7,7 +7,7 @@ defmodule Mix.Tasks.SuccessfulDay do
 
   require Logger
 
-  @length_of_day_in_seconds 10
+  @length_of_day_in_seconds 20
 
   @shortdoc "Submits trades every 5 seconds."
   def run(_) do
@@ -108,7 +108,9 @@ defmodule Mix.Tasks.SuccessfulDay do
     # Recursive call to loop again
     cond do
       over and not account_in_negative_balance?(account, securities) ->
-        IO.puts("Exiting thread for account #{account.account_number} after 90 seconds")
+        IO.puts(
+          "Exiting thread for account #{account.account_number} after #{@length_of_day_in_seconds} seconds"
+        )
 
       over ->
         random_duration_ms = :rand.uniform(1000) + 200
