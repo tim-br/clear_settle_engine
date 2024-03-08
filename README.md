@@ -28,8 +28,8 @@ Run the following commands:
 - `mix ecto.migrate` to run migrations.
 
 #### Running Mix Tasks:
-- Run `mix run init` to execute the demo task.
-- Run `mix run successful_day` to execute the successful_day task.
+- Run `mix init` to execute the demo task.
+- Run `mix successful_day` to execute the successful_day task.
 
 Ensure you're in the project directory while running these commands.
 

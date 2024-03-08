@@ -16,9 +16,6 @@ defmodule Mix.Tasks.Init do
     # Create Securities
     1..3
     |> Enum.each(fn _ -> create_security() end)
-
-    # Create Account Balances
-    # ... (This depends on how you have structured your SecurityBalances schema)
   end
 
   def create_participant do
