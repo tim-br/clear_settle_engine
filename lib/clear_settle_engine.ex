@@ -20,7 +20,8 @@ defmodule ClearSettleEngine do
 
   def start(_type, _args) do
     children = [
-      ClearSettleEngine.Repo
+      ClearSettleEngine.Repo,
+      {SuccessfulDayScheduler, []}
     ]
 
     opts = [strategy: :one_for_one, name: ClearSettleEngine.Supervisor]

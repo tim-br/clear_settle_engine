@@ -7,12 +7,12 @@ defmodule Mix.Tasks.SuccessfulDay do
 
   require Logger
 
-  @length_of_day_in_seconds 20
+  @length_of_day_in_seconds 120
 
   @shortdoc "Submits trades every 5 seconds."
   def run(_) do
     start_required_applications()
-    {:ok, _} = Repo.start_link()
+    ## {:ok, _} = Repo.start_link()
     Logger.configure(level: :info)
 
     Logger.info("Starting to submit trades...")
