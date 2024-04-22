@@ -23,4 +23,4 @@ COPY . .
 RUN mix do compile
 
 # Run the application
-CMD ["mix", "run"]
+CMD ["mix", "run", "--no-halt"]
