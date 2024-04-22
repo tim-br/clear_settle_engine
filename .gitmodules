@@ -1,3 +1,3 @@
 [submodule "lib/clear_settle_engine_schemas"]
 	path = lib/clear_settle_engine_schemas
-	url = git@github.com:tim-br/clear_settle_engine_schemas.git
+	url = https://github.com/tim-br/clear_settle_engine_schemas.git 
