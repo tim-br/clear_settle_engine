@@ -31,7 +31,7 @@ jobs:
     - name: Build, Tag, and Push Docker image to ECR
       run: |
         docker build -t clearsettleengine .
-        docker tag counter_web 211125762589.dkr.ecr.us-west-2.amazonaws.com/repo:clearsettleengine
+        docker tag clearsettleengine 211125762589.dkr.ecr.us-west-2.amazonaws.com/repo:clearsettleengine
         docker push 211125762589.dkr.ecr.us-west-2.amazonaws.com/repo:clearsettleengine
       env:
         AWS_DEFAULT_REGION: us-west-2
