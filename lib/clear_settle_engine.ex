@@ -21,6 +21,7 @@ defmodule ClearSettleEngine do
   def start(_type, _args) do
     children = [
       ClearSettleEngine.Repo,
+      RabbitMQSubscriber,
       {SuccessfulDayScheduler, []}
     ]
 

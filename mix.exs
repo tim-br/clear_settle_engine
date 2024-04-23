@@ -23,6 +23,7 @@ defmodule ClearSettleEngine.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:amqp, "~> 3.3"},
       {:ecto_sql, "~> 3.11.1"},
       {:logger_file_backend, "~> 0.0.11"},
       {:postgrex, "~> 0.17.4"},

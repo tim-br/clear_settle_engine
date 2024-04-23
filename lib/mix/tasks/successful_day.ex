@@ -7,7 +7,7 @@ defmodule Mix.Tasks.SuccessfulDay do
 
   require Logger
 
-  @length_of_day_in_seconds 120
+  @length_of_day_in_seconds 10
 
   @shortdoc "Submits trades every 5 seconds."
   def run(_) do
